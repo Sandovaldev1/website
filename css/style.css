@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navigation-wrap {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    z-index: 10000;
+    transition: all 0.3s ease-out;
+}
+.navigation-wrap .nav-item {
+    padding: 0 10px;
+    transition: all 0.3s linear;
+}
+.navbar-brand img {
+    width: 127px;
+}
+.navbar-toggler{
+    border: none;
+}
+/* Indicamos que cuando se haga scroll cambie de color el icono menu hamburguesa */
+.navigation-wrap.scroll-on .navbar-toggler i{
+    color: #000;
+}
+.navbar-toggler i{
+    color: #fff;
+    font-size: 20px;
+    border: none;
+}
+/* Quitamos estilos que trae por defecto al presionar el menu hamburguesa */
+.navbar-toggler:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+.nav-link {
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    color: #fff;
+    margin: 0 10px;
+}
+.nav-link:hover {
+    color: #bd262a;
+}
+/* cuando esta responsivo, se despliegan las opciones y las centramos */
+.navbar-collapse{
+    text-align: center;
+}
+
+.navigation-wrap.scroll-on {
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 28px 0 rgb(0, 0, 0, 0.09);
+    transition: all 0.15s ease-in-out 0s;
+}
+
+.navigation-wrap.scroll-on .nav-link {
+    color: #000;
+}
+
+.navigation-wrap.scroll-on .nav-link:hover
+{
+    color: #bd262a;
+}
+
+.sectionOne {
+    background-image: url("../img/banner1.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.644);
+    padding: 170px 0;
+    height: 450px;
+}
+
+.sectionOne h1 {
+    color: #fff;
+    font-size: 45px;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+.sectionOne p {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+
+.sectionTwo h2{
+    text-decoration:underline;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+.sectionTwo {
+    padding: 100px 0;
+}
+
+.sectionTwo p {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.sectionThree{
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
+
+
+.sectionThree h2 {
+    color: #fff;
+    padding-bottom: 20px;
+    font-weight: bold;
+    font-size: 45px;
+}
+
+.sectionThree img{
+    height: 120px;
+}
+.sectionThree p {
+    color: #fff;
+    white-space: pre-line;
+    font-size: 17;
+    line-height: 28px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.card-title {
+    text-decoration: underline;
+    color: #000;
+    font-weight: bold;
+}
+
+.card p{
+    padding-top: 20px;
+    color: #000;
+    height: 150px;
+}
+
+
+
+.sectionFour img{
+    height: 250px;
+}
+
+.sectionFour{
+    padding: 90px 0;  
+}
+
+.sectionFour h2{
+    padding-bottom: 20px;
+    font-weight: bold;
+    font-size: 45px;
+}
+.sectionFour p {
+    color: #000;
+    white-space: pre-line;
+    font-size: 17;
+    line-height: 28px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.sectionFour .p-text-four{
+    white-space: normal;
+    padding-bottom: 25px;
+    margin: 0 auto;
+}
+
+.btn{
+    justify-content: center;
+    align-self: center;
+    width: 50%;
+}
+
+.sectionApp {
+    background-color: #f7f7f7;
+}
+
+.divImg img {
+    max-width: 350px;
+    width: 100%;
+}
+
+.sectionApp h2 {
+    padding-bottom: 20px;
+    font-weight: bold;
+    color: #000;
+    font-size: 45px;
+}
+.sectionApp p {
+    font-size: 16px;
+    line-height: 26px;
+    margin: 0px 0px 15px;
+    font-weight: 300;
+}
+
+.boxInformativo {
+    min-height: 260px;
+    padding: 40px 15px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.boxInformativo h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff;
+    margin: 0 0 0.313rem;
+}
+
+.boxInformativo.estilo1 {
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
+
+.boxInformativo span {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: 0px;
+    line-height: 26px;
+    color: #fff;
+}
+
+.boxInformativo img{
+    width: 50px;
+}
+
+.container-form{
+    margin: 0 auto;
+    background-color: #0f2027b9;
+    padding: 20px;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.container-form .btn{
+    margin-top: 10px;
+}
+.no-resize {
+    resize: none;
+  }
+
+.sectionFive{    
+    background-image: url("../img/Formulario.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 0;
+
+}
+
+.sectionFive h2 {
+    padding-bottom: 20px;
+    font-weight: bold;
+    color: aliceblue;
+    font-size: 45px;
+}
+
+footer{
+    color: aliceblue;
+    padding: 50px;
+    background: rgb(24, 24, 24);
+}
+footer a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: inline-block;
+}
+footer p{
+    padding-top: 15px;
+}
+@media (min-width: 992px) {
+    .container-form {
+      max-width: 600px;
+    }
+  }
