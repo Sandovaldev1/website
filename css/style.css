@@ -120,26 +120,24 @@
     background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
 }
 
-
 .sectionThree h2 {
     color: #fff;
     padding-bottom: 20px;
     font-weight: bold;
     font-size: 45px;
 }
-
-.sectionThree img{
-    height: 120px;
+.card{
+    height: 490px;
+    padding-bottom: 20px;
 }
 .sectionThree p {
     color: #fff;
     white-space: pre-line;
     font-size: 17;
-    line-height: 28px;
+    line-height: 25px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
 }
-
 .card-title {
     text-decoration: underline;
     color: #000;
@@ -147,19 +145,18 @@
 }
 
 .card p{
-    padding-top: 20px;
     color: #000;
-    height: 150px;
 }
 
-
-
+.sectionThree .card-text{
+    height: 100px;
+}
 .sectionFour img{
     height: 250px;
 }
-
 .sectionFour{
     padding: 90px 0;  
+    background-color: #807e7e36;
 }
 
 .sectionFour h2{
@@ -171,11 +168,14 @@
     color: #000;
     white-space: pre-line;
     font-size: 17;
-    line-height: 28px;
+    line-height: 20px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
 }
 
+.sectionFour .card-text{
+    height: 100px;
+}
 .sectionFour .p-text-four{
     white-space: normal;
     padding-bottom: 25px;
@@ -195,6 +195,10 @@
 .divImg img {
     max-width: 350px;
     width: 100%;
+}
+
+.card img{
+    height: 250px;
 }
 
 .sectionApp h2 {
@@ -289,6 +293,85 @@ footer a{
 footer p{
     padding-top: 15px;
 }
+
+
+/*Dispositivos moviles como Iphone 5 */
+@media (min-width: 320px) and (max-width: 568px){
+    .navbar .navbar-collapse {
+        /* Ocultar el contenido de la barra de navegación por defecto */
+       background-color: #fff; /* Fondo blanco */
+       /* Otros estilos específicos para la barra desplegada aquí */
+     }
+   
+     .navbar.is-active .navbar-collapse {
+         display: block; /* Mostrar el contenido de la barra de navegación cuando se despliega */
+         
+     }
+     .nav-link{
+         color: #000;
+     }
+
+     .sectionThree .card-text{
+        height: 120px;
+    }
+}
+
+
+/*Tablets*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    .navbar .navbar-collapse {
+        /* Ocultar el contenido de la barra de navegación por defecto */
+       background-color: #fff; /* Fondo blanco */
+       /* Otros estilos específicos para la barra desplegada aquí */
+     }
+     .navbar.is-active .navbar-collapse {
+        display: block; /* Mostrar el contenido de la barra de navegación cuando se despliega */
+        
+    }
+    .nav-link{
+        color: #000;
+    }
+    .sectionThree p{
+        font-size: 30px;
+        margin-bottom: 35px;
+    }
+    .card{
+        height: 500px;
+    }
+    .card p{
+        font-size: 22px;
+    }
+    .card h5{
+        font-size: 30px;
+    }
+
+    .sectionOne p {
+        font-size: 25px;
+    }
+
+    .sectionTwo p{
+        font-size: 25px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .navbar .navbar-collapse {
+        /* Ocultar el contenido de la barra de navegación por defecto */
+        background-color:#ffffff00;
+       /* Otros estilos específicos para la barra desplegada aquí */
+     }
+     .nav-link{
+        color:#fff
+     }
+    .sectionFour p{
+        white-space: initial;
+    }
+    .card{
+        height: 520px;
+    }
+
+}
+
+
 @media (min-width: 992px) {
     .container-form {
       max-width: 600px;
