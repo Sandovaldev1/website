@@ -126,10 +126,7 @@
     font-weight: bold;
     font-size: 45px;
 }
-.card{
-    height: 490px;
-    padding-bottom: 20px;
-}
+
 .sectionThree p {
     color: #fff;
     white-space: pre-line;
@@ -151,6 +148,7 @@
 .sectionThree .card-text{
     height: 100px;
 }
+
 .sectionFour img{
     height: 250px;
 }
@@ -312,7 +310,8 @@ footer p{
      }
 
      .sectionThree .card-text{
-        height: 120px;
+        height: 125px;
+        margin-bottom: 4px;
     }
 }
 
@@ -336,8 +335,13 @@ footer p{
         margin-bottom: 35px;
     }
     .card{
-        height: 500px;
+        height: 650px;
     }
+    .card img{
+        width: 100%;
+        height: 60%;
+    }
+
     .card p{
         font-size: 22px;
     }
@@ -352,6 +356,10 @@ footer p{
     .sectionTwo p{
         font-size: 25px;
     }
+    .social i{
+        font-size: 22px;
+    }
+
 }
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .navbar .navbar-collapse {
@@ -368,9 +376,20 @@ footer p{
     .card{
         height: 520px;
     }
-
+    .card img{
+        height: 40%;
+    }
+    .sectionThree .card-text{
+        height: 125px;
+        margin-bottom: 45px;
+    }
 }
 
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .social i{
+        font-size: 22px;
+    }
+}
 
 @media (min-width: 992px) {
     .container-form {
