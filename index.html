@@ -9,6 +9,9 @@
     <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="
+        https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+        " rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>@Sandovaldev1</title>
 </head>
@@ -22,7 +25,7 @@
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
                     aria-controls="menu" aria-expanded="false" aria-label="menú hamburguer">
-                    <i class="fa-solid fa-bars-staggered"></i>
+                    <i class="fa-solid fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="menu">
                     <ul class="navbar-nav ms-auto">
@@ -49,7 +52,7 @@
             </div>
         </nav>
     </header>
-    <div>
+    <main>
         <section id="home" class="container-fluid img-fluid sectionOne">
             <div class="container">
                 <div class="row align-items-center">
@@ -76,7 +79,7 @@
         </section>
 
         <!--Portafolio-->
-
+        <!--
         <section id="portafolio" class="container-fluid py-5 sectionThree">
             <div class="container text-center">
                 <h2>Projects</h2>
@@ -99,7 +102,8 @@
 
                     <div class="col-lg-4 pb-4">
                         <div class="card">
-                            <img src="img/VinosBodegon.PNG" class="card-img-top img-fluid imagen-projects" alt="image of page">
+                            <img src="img/VinosBodegon.PNG" class="card-img-top img-fluid imagen-projects"
+                                alt="image of page">
                             <div class="card-body">
                                 <h5 class="card-title">Vinos Bodegón</h5>
                                 <p class="card-text">Website type landing page with thematic of wine promotion</p>
@@ -113,7 +117,8 @@
 
                     <div class="col-lg-4 pb-4">
                         <div class="card">
-                            <img src="img/Cafe1820.PNG" class="card-img-top img-fluid imagen-projects" alt="image of coffe">
+                            <img src="img/Cafe1820.PNG" class="card-img-top img-fluid imagen-projects"
+                                alt="image of coffe">
                             <div class="card-body">
                                 <h5 class="card-title">Café 1820</h5>
                                 <p class="card-text">Page type one page with theme of the coffee company 1820.</p>
@@ -129,7 +134,8 @@
                 <div class="row">
                     <div class="col-lg-4 pb-4">
                         <div class="card">
-                            <img src="img/TechSources.PNG" class="card-img-top img-fluid imagen-projects" alt="image of tech Sources">
+                            <img src="img/TechSources.PNG" class="card-img-top img-fluid imagen-projects"
+                                alt="image of tech Sources">
                             <div class="card-body">
                                 <h5 class="card-title">Tech Sources</h5>
                                 <p class="card-text">Simulation of a company website on Technology. Columns are used
@@ -142,7 +148,8 @@
 
                     <div class="col-lg-4 pb-4">
                         <div class="card">
-                            <img src="img/AppDog.PNG" class="card-img-top img-fluid imagen-projects" alt="image of app dog">
+                            <img src="img/AppDog.PNG" class="card-img-top img-fluid imagen-projects"
+                                alt="image of app dog">
                             <div class="card-body">
                                 <h5 class="card-title">App Dog</h5>
                                 <p class="card-text">Web application created with JavaScript and Api Rest, selects
@@ -155,7 +162,8 @@
 
                     <div class="col-lg-4 pb-4">
                         <div class="card">
-                            <img src="img/MicrosoftPage.PNG" class="card-img-top img-fluid imagen-projects" alt="image of Microsoft">
+                            <img src="img/MicrosoftPage.PNG" class="card-img-top img-fluid imagen-projects"
+                                alt="image of Microsoft">
                             <div class="card-body">
                                 <h5 class="card-title">Microsoft Page</h5>
                                 <p class="card-text">Informative web page that allows you to view Youtube videos about
@@ -166,6 +174,90 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+-->
+        <section id="portafolio" class="container-fluid splide  py-5 sectionThree" aria-label="Slide Container Example">
+            <div class="container splide__track text-center container-cards">
+                <h2>Projects</h2>
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <div class="splide__slide__container">
+                            <div class="card">
+                                <img src="img/CostaRicaGreen.PNG" class="card-img-top img-fluid">
+                                <div class="card-body">
+                                    <h5 class="card-title">Costa Rica Green</h5>
+                                    <p class="card-text">Website type landing page with tourism theme about Costa Rica.
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Go</a>
+                                </div>
+                            </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="splide__slide__container">
+                            <div class="card">
+                                <img src="img/VinosBodegon.PNG" class="card-img-top img-fluid">
+                                <div class="card-body">
+                                    <h5 class="card-title">Vinos bodegón</h5>
+                                    <p class="card-text">Website type landing page with thematic of wine promotion</p>
+                                    <a href="#" class="btn btn-primary">Go</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="splide__slide">
+                        <div class="splide__slide__container">
+                            <div class="card">
+                                <img src="img/Cafe1820.PNG" class="card-img-top img-fluid">
+                                <div class="card-body">
+                                    <h5 class="card-title">Café 1820</h5>
+                                    <p class="card-text">Page type one page with theme of the coffee company 1820.</p>
+                                    <a href="#" class="btn btn-primary">Go</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="splide__slide__container">
+                            <div class="card">
+                                <img src="img/TechSources.PNG" class="card-img-top img-fluid">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tech Sources</h5>
+                                    <p class="card-text">Simulation of a company website on Technology. Columns are used
+                                        with Bootstrap classes.</p>
+                                    <a href="#" class="btn btn-primary">Go</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="splide__slide__container">
+                            <div class="card">
+                                <img src="img/AppDog.PNG" class="card-img-top img-fluid">
+                                <div class="card-body">
+                                    <h5 class="card-title">APP Dog</h5>
+                                    <p class="card-text">Web application created with JavaScript and Api Rest, selects
+                                        images to favorites and delete.</p>
+                                    <a href="#" class="btn btn-primary">Go</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="splide__slide__container">
+                            <div class="card">
+                                <img src="img/MicrosoftPage.PNG" class="card-img-top img-fluid">
+                                <div class="card-body">
+                                    <h5 class="card-title">Microsoft Page</h5>
+                                    <p class="card-text">Web application created with JavaScript and Api Rest, selects
+                                        images to favorites and delete.</p>
+                                    <a href="#" class="btn btn-primary">Go</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </section>
 
@@ -255,7 +347,7 @@
                 <h2 class="text-center">Technologies</h2>
                 <div class="row">
 
-                    <div class="col-sm-4">
+                    <div class="col-sm-4 col-md-4">
                         <div class="boxInformativo estilo1">
                             <img class="img-informativo" src="img/js.png" alt="JavaScript">
                             <h3>JavaScript</h3>
@@ -263,7 +355,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-4">
+                    <div class="col-sm-4 col-md-4">
                         <div class="boxInformativo estilo1">
                             <img class="img-informativo" src="img/html5-original.svg" alt="html">
                             <h3>HTML5</h3>
@@ -271,7 +363,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-4">
+                    <div class="col-sm-4 col-md-4">
                         <div class="boxInformativo estilo1">
                             <img class="img-informativo" src="img/css3-original.svg" alt="css3">
                             <h3>CSS3</h3>
@@ -281,8 +373,8 @@
 
                 </div>
                 <div class="row">
-                    
-                    <div class="col-sm-4">
+
+                    <div class="col-sm-4 col-md-4">
                         <div class="boxInformativo estilo1">
                             <img class="img-informativo" src="img/microsoftsqlserver-plain-wordmark.svg" alt="sql">
                             <h3>SQL Server</h3>
@@ -290,22 +382,22 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-4">
+                    <div class="col-sm-4 col-md-4">
                         <div class="boxInformativo estilo1">
                             <img class="img-informativo" src="img/react-original.svg" alt="react">
                             <h3>React.js</h3>
                             <span>Completed</span>
                         </div>
                     </div>
-                
-                    <div class="col-sm-4">
+
+                    <div class="col-sm-4 col-md-4">
                         <div class="boxInformativo estilo1">
                             <img class="img-informativo" src="img/csharp.png" alt="">
                             <h3>C#</h3>
                             <span>IN PROCESS</span>
                         </div>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-4 col-md-4">
                         <div class="boxInformativo estilo1">
                             <img class="img-informativo" src="img/azure-original.svg" alt="">
                             <h3>Azure</h3>
@@ -345,45 +437,48 @@
                     </div>
                 </form>
             </div>
-
         </section>
+    </main>
 
-        <footer>
-            <div class="container text-center">
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="container">
-                            <h3>Linkedin</h3>
-                            <a href="https://www.linkedin.com/in/v%C3%ADctor-salinas-sandoval-979b9717a/"
-                                target="_blank"> <i class="fa-brands fa-linkedin"></i> Linkedin</a>
-                        </div>
+    <button id="scrollToTopButton" class="botonScrollTop"><i class="fas fa-angle-up"></i></button>
+
+    <footer>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="container">
+                        <h3>Linkedin</h3>
+                        <a href="https://www.linkedin.com/in/v%C3%ADctor-salinas-sandoval-979b9717a/" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i> Linkedin</a>
                     </div>
+                </div>
 
-                    <div class="col-lg-4">
-                        <div class="container social">
-                            <h3>Social Media</h3>
-                            <a href="https://www.facebook.com/profile.php?id=100087921491484" target="_blank"><i
-                                    class="fa-brands fa-facebook"></i> Facebook</a>
-                            <a href="https://www.instagram.com/agustinsando21/" target="_blank"> <i
-                                    class="fa-brands fa-instagram"></i> Instagram</a>
-                            <a href="https://twitter.com/Sandovaldev21" target="_blank"> <i
-                                    class="fa-brands fa-twitter"></i> Twitter</a>
-                        </div>
+                <div class="col-lg-4">
+                    <div class="container social">
+                        <h3>Social Media</h3>
+                        <a href="https://www.facebook.com/profile.php?id=100087921491484" target="_blank"><i
+                                class="fa-brands fa-facebook"></i> Facebook</a>
+                        <a href="https://www.instagram.com/agustinsando21/" target="_blank"> <i
+                                class="fa-brands fa-instagram"></i> Instagram</a>
+                        <a href="https://twitter.com/Sandovaldev21" target="_blank"> <i
+                                class="fa-brands fa-twitter"></i> Twitter</a>
                     </div>
+                </div>
 
-                    <div class="col-lg-4">
-                        <div class="container">
-                            <h3>Contact</h3>
-                            <p>sandovaldev21@gmail.com</p>
-                        </div>
+                <div class="col-lg-4">
+                    <div class="container">
+                        <h3>Contact</h3>
+                        <p>sandovaldev21@gmail.com</p>
                     </div>
                 </div>
             </div>
-        </footer>
+        </div>
+    </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script src="https://kit.fontawesome.com/00ce13a4f0.js" crossorigin="anonymous"></script>
     <script src="https://cdn.sendgrid.com/5.5.0/sendgrid.min.js"></script>
     <script src="js/index.js"></script>
