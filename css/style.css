@@ -439,6 +439,10 @@ footer p{
     .sectionCertificates h4{
         width: 70%;
     }
+
+    .sectionCertificates .card-text{
+        height: auto;
+    }
     .nav .basicC,
     .nav .jS{
         display: none;
