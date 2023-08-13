@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+body{
+    background: #010203;
+}
+
 .navigation-wrap {
     position: fixed;
     width: 100%;
@@ -103,6 +107,7 @@
     text-decoration:underline;
     font-weight: bold;
     padding-bottom: 15px;
+    color: #fff;
 }
 
 .sectionTwo {
@@ -115,10 +120,12 @@
     line-height: 30px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
+    color: #fff;
 }
 
 .sectionThree{
-    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    /*background: linear-gradient(to right, #0f2027, #203a43, #2c5364);*/
+    background: #536b75;
 }
 
 .sectionThree h2 {
@@ -161,25 +168,40 @@
     height: 250px;
 }
 .sectionFour{
-    padding: 90px 0;  
-    background-color: #807e7e70;
+
+    /*background-color: #807e7e70;*/
+}
+
+.sectionFour .btn-show{
+    padding: 15px;
+    border-radius: 5px;
+    background: green;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+.sectionFour .btn-show:hover{
+    background: rgb(2, 180, 2);
 }
 
 .sectionFour h2{
+    color: #fff;
     padding-bottom: 20px;
     font-weight: bold;
     font-size: 45px;
 }
 .sectionFour p {
-    color: #000;
     white-space: pre-line;
     font-size: 17;
     line-height: 20px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
+    color: #fff;
 }
 
 .sectionFour .card-text{
+    color: #000;
     height: 100px;
 }
 .sectionFour .p-text-four{
@@ -195,7 +217,8 @@
 }
 
 .sectionApp {
-    background-color: #f7f7f7;
+    background: linear-gradient(55deg, #010203 50%, white 50%);
+    /*background-color: #f7f7f7;*/
 }
 
 .divImg img {
@@ -285,6 +308,66 @@
     font-size: 45px;
 }
 
+/*Seccion certificados*/
+.bodyCertifications{
+    background: linear-gradient(55deg, #010203 50%, white 50%);
+    background-repeat: no-repeat;
+    height: 100%;
+    background-size: contain;
+}
+.nav{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    position: fixed;
+    z-index: 10000;
+    background-color: #fff;
+    padding: 20px;
+}
+
+
+.nav .nav-link{
+    background-color: #33cfff;
+    color: #000;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3); /* Desplazamiento en X, Desplazamiento en Y, Borrosidad, Color */
+    border-radius: 5px;
+}
+.sectionCertificates h2{
+    color: #000;
+    font-weight: bold;
+    font-size: 45px;
+    margin-top: 50px;
+}
+.sectionCertificates p {
+    white-space: pre-line;
+    font-size: 17;
+    line-height: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+
+
+.sectionCertificates .card-text{
+        color: #000;
+        height: 100px;
+}
+
+.sectionCertificates h4{
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    width: 20%;
+    padding: 10px;
+    background: #536b75;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3); /* Desplazamiento en X, Desplazamiento en Y, Borrosidad, Color */
+    border-radius: 10px;
+    color: #fff;
+}
+
 .botonScrollTop{
     position: fixed;
     height: 45px;
@@ -301,12 +384,13 @@
     border-color: none;
     cursor: pointer;
     box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.342);
+
 }
 
 footer{
     color: aliceblue;
     padding: 50px;
-    background: rgb(24, 24, 24);
+    background: #010203;
 }
 footer a{
     text-decoration: none;
@@ -351,6 +435,13 @@ footer p{
     .sectionFour .card-text{
         height: auto;
         margin-bottom: 24px;
+    }
+    .sectionCertificates h4{
+        width: 70%;
+    }
+    .nav .basicC,
+    .nav .jS{
+        display: none;
     }
 }
 
@@ -401,7 +492,9 @@ footer p{
     .sectionThree .card{
         margin-left: 10px;
     }
-
+    .sectionCertificates h4{
+        width: 80%;
+    }
 }
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .navbar .navbar-collapse {
@@ -445,6 +538,23 @@ footer p{
     .sectionThree .card{
         margin-left: 10px;
     }
+    .sectionFour .card-text{
+        color: #000;
+        height: 55px;
+    }
+    .boxInformativo {
+        width: 70%;
+        min-height: 220px;
+        padding: 40px 15px;
+        text-align: center;
+        border-radius: 20px;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    .sectionCertificates .card-text{
+        color: #000;
+        height: 55px;
+}
 }
 
 @media (min-width: 992px) {
