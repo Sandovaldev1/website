@@ -179,8 +179,15 @@ body{
     text-decoration: none;
     color: #fff;
     transition: 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 20%;
 }
-
+.sectionFour .btn-show i{
+    padding-left: 20px;
+}
 .sectionFour .btn-show:hover{
     background: rgb(2, 180, 2);
 }
@@ -447,6 +454,10 @@ footer p{
     .nav .jS{
         display: none;
     }
+    .sectionFour .btn-show{
+        width: 50%;
+    }
+
 }
 
 
@@ -498,6 +509,15 @@ footer p{
     }
     .sectionCertificates h4{
         width: 80%;
+    }
+    .boxInformativo {
+        width: 100%;
+        padding: 20px;
+    }
+    .sectionFour .btn-show{
+        width: 50%;
+        padding: 35px;
+        font-size: 30px;
     }
 }
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
