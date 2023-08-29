@@ -125,7 +125,8 @@ body{
 
 .sectionThree{
     /*background: linear-gradient(to right, #0f2027, #203a43, #2c5364);*/
-    background: #536b75;
+    /*background: #536b75;*/
+    background: #000000b8;
 }
 
 .sectionThree h2 {
