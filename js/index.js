@@ -65,5 +65,33 @@ var splide = new Splide('.splide', {
   }
 });
 
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Ocultar el elemento de carga y mostrar el contenido de la página
+  var loader = document.getElementById("loader");
+  var content = document.getElementById("content");
+
+  setTimeout(function () {
+    loader.style.display = "none";
+    content.style.display = "block";
+  }, 1000); // 2 segundos
+});
+
+
+
+
+
+
+
+
+
+
+
 splide.mount();
+
+
+
+
 

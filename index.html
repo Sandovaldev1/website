@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="@Sandovaldev1 official website">
+    <meta name="description" content="@Sandovaldev official website">
     <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
@@ -14,345 +14,373 @@
         " rel="stylesheet">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GMNR62GC44"></script>
     <link rel="stylesheet" href="css/style.css">
-    <title>@Sandovaldev1</title>
+    <title>@Sandovaldev</title>
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navigation-wrap navbar">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">
-                    <img src="assets/logo.png" alt="logo de la imagen" class="img-fluid">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
-                    aria-controls="menu" aria-expanded="false" aria-label="menú hamburguer">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="menu">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="true" href="#home">Home</a>
+    <div id="loader">
+        <div id="loader-content">
+            <div class="robot-image"></div>
+            <div class="loading-message">Loading...</div>
+            <div class="progress-bar-container">
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+    </div>
+    <div id="content" style="display: none;">
+        <!-- El contenido de tu sitio web irá aquí -->
+        <header>
+            <nav class="navbar navbar-expand-lg navigation-wrap navbar">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                        <!--
+                        <img src="assets/logo.png" alt="logo de la imagen" class="img-fluid logo-assets">
+                        -->
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                        aria-controls="menu" aria-expanded="false" aria-label="menú hamburguer">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="menu">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="true" href="#home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">About me</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#portafolio">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#certificados">Certificates</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#technologies">technologies</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section id="home" class="container-fluid img-fluid sectionOne">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <h1>Full Stack Developer<br></h1>
+                            <p>Specialized in React.JS, JavaScript, C#, .Net/Node</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--
+            <video autoplay muted loop id="video-background">
+                <source src="vd/bg1.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+            -->
+            <section id="about" class="container-fluid sectionTwo">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <h2>About me</h2>
+                            <p>I'm a Full Stack Developer 👾 | Specialized in React.JS, JavaScript, C#, .Net/Node
+                                and
+                                other technologies of Microsoft, with 2 years of experience in the design and
+                                development of
+                                websites, as well as solutions.💚</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--Portafolio-->
+            <section id="portafolio" class="container-fluid splide  py-5 sectionThree"
+                aria-label="Slide Container Example">
+                <div class="container splide__track text-center container-cards">
+                    <h2>Projects</h2>
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="splide__slide__container">
+                                <div class="card">
+                                    <img src="img/CostaRicaGreen.PNG" class="card-img-top img-fluid" alt="imageProject">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Costa Rica Green</h5>
+                                        <p class="card-text">Website type landing page with tourism theme about Costa
+                                            Rica.
+                                        </p>
+                                        <a href="https://sandovaldev1.github.io/CostaRicaGreen/" class="btn btn-primary"
+                                            target="_blank">Go</a>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">About me</a>
+                        <li class="splide__slide">
+                            <div class="splide__slide__container">
+                                <div class="card">
+                                    <img src="img/VinosBodegon.PNG" class="card-img-top img-fluid" alt="imageProject">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Vinos bodegón</h5>
+                                        <p class="card-text">Website type landing page with thematic of wine promotion
+                                        </p>
+                                        <a href="https://sandovaldev1.github.io/El-Bodegon-Vinos/"
+                                            class="btn btn-primary" target="_blank">Go</a>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#portafolio">Projects</a>
+
+                        <li class="splide__slide">
+                            <div class="splide__slide__container">
+                                <div class="card">
+                                    <img src="img/Cafe1820.PNG" class="card-img-top img-fluid" alt="imageProject">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Café 1820</h5>
+                                        <p class="card-text">Page type one page with theme of the coffee company 1820.
+                                        </p>
+                                        <a href="https://sandovaldev1.github.io/Cafe1820/" class="btn btn-primary"
+                                            target="_blank">Go</a>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#certificados">Certificates</a>
+                        <li class="splide__slide">
+                            <div class="splide__slide__container">
+                                <div class="card">
+                                    <img src="img/TechSources.PNG" class="card-img-top img-fluid" alt="imageProject">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Tech Sources</h5>
+                                        <p class="card-text">Simulation of a company website on Technology. Columns are
+                                            used
+                                            with Bootstrap classes.</p>
+                                        <a href="https://sandovaldev1.github.io/Tech-sources/index.html"
+                                            class="btn btn-primary" target="_blank">Go</a>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#technologies">technologies</a>
+                        <li class="splide__slide">
+                            <div class="splide__slide__container">
+                                <div class="card">
+                                    <img src="img/AppDog.PNG" class="card-img-top img-fluid" alt="imageProject">
+                                    <div class="card-body">
+                                        <h5 class="card-title">APP Dog</h5>
+                                        <p class="card-text">Web application created with JavaScript and Api Rest,
+                                            selects
+                                            images to favorites and delete.</p>
+                                        <a href="https://sandovaldev1.github.io/appdog/" class="btn btn-primary"
+                                            target="_blank">Go</a>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
+                        <li class="splide__slide">
+                            <div class="splide__slide__container">
+                                <div class="card">
+                                    <img src="img/MicrosoftPage.PNG" class="card-img-top img-fluid" alt="imageProject">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Microsoft Page</h5>
+                                        <p class="card-text">Web application created with JavaScript and Api Rest,
+                                            selects
+                                            images to favorites and delete.</p>
+                                        <a href="https://sandovaldev1.github.io/landing-page/" class="btn btn-primary"
+                                            target="_blank">Go</a>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </div>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <section id="home" class="container-fluid img-fluid sectionOne">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <h1>Full Stack Developer<br></h1>
-                        <p>Specialized in React.JS, JavaScript, C#, .Net/Node</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <video autoplay muted loop id="video-background">
-            <source src="vd/bg1.mp4" type="video/mp4">
-            Tu navegador no soporta el elemento de video.
-        </video>
-        <section id="about" class="container-fluid sectionTwo">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <h2>About me</h2>
-                        <p>I'm a Junior FullStack Developer 👾 | Specialized in React.JS, JavaScript, C#, .Net/Node
-                            and
-                            other technologies of Microsoft, with 2 years of experience in the design and development of
-                            websites, as well as solutions.💚</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+            </section>
 
-        <!--Portafolio-->
-        <section id="portafolio" class="container-fluid splide  py-5 sectionThree" aria-label="Slide Container Example">
-            <div class="container splide__track text-center container-cards">
-                <h2>Projects</h2>
-                <ul class="splide__list">
-                    <li class="splide__slide">
-                        <div class="splide__slide__container">
+            <section id="certificados" class="container-fluid py-5 sectionFour">
+                <div class="container py-5 text-center">
+                    <h2>Certificates</h2>
+                    <p class="p-text-four">Throughout this wonderful career I have had the joy of studying to deepen my
+                        knowledge, you can see
+                        the
+                        following certifications.</p>
+                    <div class="row">
+                        <div class="col-lg-4 pb-4">
                             <div class="card">
-                                <img src="img/CostaRicaGreen.PNG" class="card-img-top img-fluid" alt="imageProject">
+                                <img src="img/UH.PNG" class="card-img-top img-fluid" alt="University logo">
                                 <div class="card-body">
-                                    <h5 class="card-title">Costa Rica Green</h5>
-                                    <p class="card-text">Website type landing page with tourism theme about Costa Rica.
+                                    <h5 class="card-title">Hispanoamerican University</h5>
+                                    <p class="card-text">Front end web technician
+                                        Concept and implementation of JavaScript, CSS3, HTML5, Bootstrap
                                     </p>
-                                    <a href="https://sandovaldev1.github.io/CostaRicaGreen/" class="btn btn-primary"
-                                        target="_blank">Go</a>
+                                    <a href="#" class="btn btn-primary">Go</a>
                                 </div>
                             </div>
                         </div>
-                    </li>
-                    <li class="splide__slide">
-                        <div class="splide__slide__container">
-                            <div class="card">
-                                <img src="img/VinosBodegon.PNG" class="card-img-top img-fluid" alt="imageProject">
-                                <div class="card-body">
-                                    <h5 class="card-title">Vinos bodegón</h5>
-                                    <p class="card-text">Website type landing page with thematic of wine promotion</p>
-                                    <a href="https://sandovaldev1.github.io/El-Bodegon-Vinos/" class="btn btn-primary"
-                                        target="_blank">Go</a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
 
-                    <li class="splide__slide">
-                        <div class="splide__slide__container">
+                        <div class="col-lg-4 pb-4">
                             <div class="card">
-                                <img src="img/Cafe1820.PNG" class="card-img-top img-fluid" alt="imageProject">
+                                <img src="img/FreeCodeCamp.PNG" class="card-img-top img-fluid" alt="certificate">
                                 <div class="card-body">
-                                    <h5 class="card-title">Café 1820</h5>
-                                    <p class="card-text">Page type one page with theme of the coffee company 1820.</p>
-                                    <a href="https://sandovaldev1.github.io/Cafe1820/" class="btn btn-primary"
-                                        target="_blank">Go</a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="splide__slide">
-                        <div class="splide__slide__container">
-                            <div class="card">
-                                <img src="img/TechSources.PNG" class="card-img-top img-fluid" alt="imageProject">
-                                <div class="card-body">
-                                    <h5 class="card-title">Tech Sources</h5>
-                                    <p class="card-text">Simulation of a company website on Technology. Columns are used
-                                        with Bootstrap classes.</p>
-                                    <a href="https://sandovaldev1.github.io/Tech-sources/index.html"
+                                    <h5 class="card-title">Responsive Web Design</h5>
+                                    <p class="card-text">Advanced concepts about responsive sites for all types of
+                                        devices
+                                    </p>
+                                    <a href="https://www.freecodecamp.org/espanol/certification/sandovaldev21/responsive-web-design"
                                         class="btn btn-primary" target="_blank">Go</a>
                                 </div>
                             </div>
                         </div>
-                    </li>
-                    <li class="splide__slide">
-                        <div class="splide__slide__container">
+
+                        <div class="col-lg-4 pb-4">
                             <div class="card">
-                                <img src="img/AppDog.PNG" class="card-img-top img-fluid" alt="imageProject">
+                                <img src="img/Udemy.PNG" class="card-img-top img-fluid" alt="certificate">
                                 <div class="card-body">
-                                    <h5 class="card-title">APP Dog</h5>
-                                    <p class="card-text">Web application created with JavaScript and Api Rest, selects
-                                        images to favorites and delete.</p>
-                                    <a href="https://sandovaldev1.github.io/appdog/" class="btn btn-primary"
-                                        target="_blank">Go</a>
+                                    <h5 class="card-title">Web development Udemy</h5>
+                                    <p class="card-text">Concept and implementation of JavaScript, PHP and
+                                        databases</p>
+                                    <a href="https://www.udemy.com/certificate/UC-d6fe9df7-f793-4136-a59c-320e57088f4e/"
+                                        class="btn btn-primary" target="_blank">Go</a>
                                 </div>
                             </div>
                         </div>
-                    </li>
-                    <li class="splide__slide">
-                        <div class="splide__slide__container">
+                    </div>
+                    <!-- 
+                        <div class="col-lg-4 pb-4">
                             <div class="card">
-                                <img src="img/MicrosoftPage.PNG" class="card-img-top img-fluid" alt="imageProject">
+                                <img src="img/Idea.PNG" class="card-img-top img-fluid" alt="idea institute logo">
                                 <div class="card-body">
-                                    <h5 class="card-title">Microsoft Page</h5>
-                                    <p class="card-text">Web application created with JavaScript and Api Rest, selects
-                                        images to favorites and delete.</p>
-                                    <a href="https://sandovaldev1.github.io/landing-page/" class="btn btn-primary"
-                                        target="_blank">Go</a>
+                                    <h5 class="card-title">IDEA Institute Technical Bilingual</h5>
+                                    <p class="card-text">English Conversational
+                                        -English B1
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Go</a>
                                 </div>
                             </div>
                         </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
+                        -->
 
-        <section id="certificados" class="container-fluid py-5 sectionFour">
-            <div class="container py-5 text-center">
-                <h2>Certificates</h2>
-                <p class="p-text-four">Throughout this wonderful career I have had the joy of studying to deepen my
-                    knowledge, you can see
-                    the
-                    following certifications.</p>
-                <div class="row">
-                    <div class="col-lg-4 pb-4">
-                        <div class="card">
-                            <img src="img/UH.PNG" class="card-img-top img-fluid" alt="University logo">
-                            <div class="card-body">
-                                <h5 class="card-title">Hispanoamerican University</h5>
-                                <p class="card-text">Front end web technician
-                                    Concept and implementation of JavaScript, CSS3, HTML5, Bootstrap
-                                </p>
-                                <a href="#" class="btn btn-primary">Go</a>
+                </div>
+                <a href="certificates.html" class="btn-show text-center">Show all <i
+                        class="fa-solid fa-arrow-right fa-beat-fade"></i></a>
+            </section>
+
+
+            <section id="technologies" class="sectionApp py-5">
+                <div class="container">
+                    <h2 class="text-center">Technologies</h2>
+                    <div class="row">
+
+                        <div class="col-sm-4 col-md-4">
+                            <div class="boxInformativo estilo1">
+                                <img class="img-informativo" src="img/js.png" alt="JavaScript">
+                                <h3>JavaScript</h3>
+                                <span>Completed</span>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="col-lg-4 pb-4">
-                        <div class="card">
-                            <img src="img/FreeCodeCamp.PNG" class="card-img-top img-fluid" alt="certificate">
-                            <div class="card-body">
-                                <h5 class="card-title">Responsive Web Design</h5>
-                                <p class="card-text">Advanced concepts about responsive sites for all types of devices
-                                </p>
-                                <a href="https://www.freecodecamp.org/espanol/certification/sandovaldev21/responsive-web-design"
-                                    class="btn btn-primary" target="_blank">Go</a>
+                        <div class="col-sm-4 col-md-4">
+                            <div class="boxInformativo estilo1">
+                                <img class="img-informativo" src="img/html5-original.svg" alt="html">
+                                <h3>HTML5</h3>
+                                <span>Completed</span>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="col-lg-4 pb-4">
-                        <div class="card">
-                            <img src="img/Udemy.PNG" class="card-img-top img-fluid" alt="certificate">
-                            <div class="card-body">
-                                <h5 class="card-title">Web development Udemy</h5>
-                                <p class="card-text">Concept and implementation of JavaScript, PHP and
-                                    databases</p>
-                                <a href="https://www.udemy.com/certificate/UC-d6fe9df7-f793-4136-a59c-320e57088f4e/"
-                                    class="btn btn-primary" target="_blank">Go</a>
+                        <div class="col-sm-4 col-md-4">
+                            <div class="boxInformativo estilo1">
+                                <img class="img-informativo" src="img/css3-original.svg" alt="css3">
+                                <h3>CSS3</h3>
+                                <span>Completed</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4 col-md-4">
+                            <div class="boxInformativo estilo1">
+                                <img class="img-informativo" src="img/microsoftsqlserver-plain-wordmark.svg" alt="sql">
+                                <h3>SQL Server</h3>
+                                <span>Completed</span>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 col-md-4">
+                            <div class="boxInformativo estilo1">
+                                <img class="img-informativo" src="img/react-original.svg" alt="react">
+                                <h3>React.js</h3>
+                                <span>Completed</span>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 col-md-4">
+                            <div class="boxInformativo estilo1">
+                                <img class="img-informativo" src="img/csharp.png" alt="">
+                                <h3>C#</h3>
+                                <span>IN PROCESS</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-md-4">
+                            <div class="boxInformativo estilo1">
+                                <img class="img-informativo" src="img/azure-original.svg" alt="">
+                                <h3>Azure</h3>
+                                <span>IN PROCESS</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- 
-                    <div class="col-lg-4 pb-4">
-                        <div class="card">
-                            <img src="img/Idea.PNG" class="card-img-top img-fluid" alt="idea institute logo">
-                            <div class="card-body">
-                                <h5 class="card-title">IDEA Institute Technical Bilingual</h5>
-                                <p class="card-text">English Conversational
-                                    -English B1
-                                </p>
-                                <a href="#" class="btn btn-primary">Go</a>
+            </section>
+
+            <section id="contact" class="container-fluid sectionFive">
+                <h2 class="text-center">You need a website?</h2>
+                <div class="container container-form text-center">
+                    <h3 class="text-center">Contact with me:</h3>
+                    <a href="https://wa.me/50664521303" class="btn btn-primary" target="_blank">¡Let's talk on
+                        WhatsApp!</a>
+                    <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.malt.es%2Fprofile%2Fvictorsandoval1%3Ffbclid%3DIwAR3wPmlhS0Wx91CBrhTV8LRKpz4Z_6Kuux9U5vrePqg15R17bipEhc45euA&h=AT2a3HgH7tpRHEMN1R_gvNda2f5Ky0DE3tnQJsnNv4wzVR7F5NwSYxITzQl69holfQ4mj3aNT5fIjyVYQKpAJOhQXLviaLWEIzeraYi0pD3coOuQ11wTduE-MP99yemsoo3Vuw"
+                        class="btn btn-primary" target="_blank">Freelance Malt</a>
+                </div>
+            </section>
+
+
+            <button id="scrollToTopButton" class="botonScrollTop"><i class="fas fa-angle-up"></i></button>
+
+            <footer>
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="container">
+                                <h3>Linkedin</h3>
+                                <a href="https://www.linkedin.com/in/v%C3%ADctor-salinas-sandoval-979b9717a/"
+                                    target="_blank">
+                                    <i class="fa-brands fa-linkedin"></i> Linkedin</a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="container social">
+                                <h3>Social Media</h3>
+                                <a href="https://www.facebook.com/profile.php?id=100087921491484" target="_blank"><i
+                                        class="fa-brands fa-facebook"></i> Facebook</a>
+                                <a href="https://www.instagram.com/agustinsando21/" target="_blank"> <i
+                                        class="fa-brands fa-instagram"></i> Instagram</a>
+                                <a href="https://twitter.com/Sandovaldev21" target="_blank"> <i
+                                        class="fa-brands fa-twitter"></i> Twitter</a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="container">
+                                <h3>Contact</h3>
+                                <p>sandovaldev21@gmail.com</p>
                             </div>
                         </div>
                     </div>
-                    -->
-
-            </div>
-            <a href="certificates.html" class="btn-show text-center">Show all <i
-                    class="fa-solid fa-arrow-right fa-beat-fade"></i></a>
-        </section>
-
-
-        <section id="technologies" class="sectionApp py-5">
-            <div class="container">
-                <h2 class="text-center">Technologies</h2>
-                <div class="row">
-
-                    <div class="col-sm-4 col-md-4">
-                        <div class="boxInformativo estilo1">
-                            <img class="img-informativo" src="img/js.png" alt="JavaScript">
-                            <h3>JavaScript</h3>
-                            <span>Completed</span>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-md-4">
-                        <div class="boxInformativo estilo1">
-                            <img class="img-informativo" src="img/html5-original.svg" alt="html">
-                            <h3>HTML5</h3>
-                            <span>Completed</span>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-md-4">
-                        <div class="boxInformativo estilo1">
-                            <img class="img-informativo" src="img/css3-original.svg" alt="css3">
-                            <h3>CSS3</h3>
-                            <span>Completed</span>
-                        </div>
-                    </div>
-
                 </div>
-                <div class="row">
-                    <div class="col-sm-4 col-md-4">
-                        <div class="boxInformativo estilo1">
-                            <img class="img-informativo" src="img/microsoftsqlserver-plain-wordmark.svg" alt="sql">
-                            <h3>SQL Server</h3>
-                            <span>Completed</span>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-md-4">
-                        <div class="boxInformativo estilo1">
-                            <img class="img-informativo" src="img/react-original.svg" alt="react">
-                            <h3>React.js</h3>
-                            <span>Completed</span>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-md-4">
-                        <div class="boxInformativo estilo1">
-                            <img class="img-informativo" src="img/csharp.png" alt="">
-                            <h3>C#</h3>
-                            <span>IN PROCESS</span>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 col-md-4">
-                        <div class="boxInformativo estilo1">
-                            <img class="img-informativo" src="img/azure-original.svg" alt="">
-                            <h3>Azure</h3>
-                            <span>IN PROCESS</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="container-fluid sectionFive">
-            <h2 class="text-center">You need a website?</h2>
-            <div class="container container-form text-center">
-                <h3 class="text-center">Contact with me:</h3>
-                <a href="https://wa.me/50664521303" class="btn btn-primary" target="_blank">¡Let's talk on WhatsApp!</a>
-                <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.malt.es%2Fprofile%2Fvictorsandoval1%3Ffbclid%3DIwAR3wPmlhS0Wx91CBrhTV8LRKpz4Z_6Kuux9U5vrePqg15R17bipEhc45euA&h=AT2a3HgH7tpRHEMN1R_gvNda2f5Ky0DE3tnQJsnNv4wzVR7F5NwSYxITzQl69holfQ4mj3aNT5fIjyVYQKpAJOhQXLviaLWEIzeraYi0pD3coOuQ11wTduE-MP99yemsoo3Vuw"
-                    class="btn btn-primary" target="_blank">Freelance Malt</a>
-            </div>
-        </section>
+            </footer>
+    </div>
 
 
-        <button id="scrollToTopButton" class="botonScrollTop"><i class="fas fa-angle-up"></i></button>
-
-        <footer>
-            <div class="container text-center">
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="container">
-                            <h3>Linkedin</h3>
-                            <a href="https://www.linkedin.com/in/v%C3%ADctor-salinas-sandoval-979b9717a/"
-                                target="_blank">
-                                <i class="fa-brands fa-linkedin"></i> Linkedin</a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4">
-                        <div class="container social">
-                            <h3>Social Media</h3>
-                            <a href="https://www.facebook.com/profile.php?id=100087921491484" target="_blank"><i
-                                    class="fa-brands fa-facebook"></i> Facebook</a>
-                            <a href="https://www.instagram.com/agustinsando21/" target="_blank"> <i
-                                    class="fa-brands fa-instagram"></i> Instagram</a>
-                            <a href="https://twitter.com/Sandovaldev21" target="_blank"> <i
-                                    class="fa-brands fa-twitter"></i> Twitter</a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4">
-                        <div class="container">
-                            <h3>Contact</h3>
-                            <p>sandovaldev21@gmail.com</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
 
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
